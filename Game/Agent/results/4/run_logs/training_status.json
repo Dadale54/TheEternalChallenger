@@ -1,0 +1,56 @@
+{
+    "AgentBehavior": {
+        "checkpoints": [
+            {
+                "steps": 249959,
+                "file_path": "results/4/AgentBehavior/AgentBehavior-249959.onnx",
+                "reward": -267.96358822553583,
+                "creation_time": 1734009076.6123157,
+                "auxillary_file_paths": [
+                    "results/4/AgentBehavior/AgentBehavior-249959.pt"
+                ]
+            },
+            {
+                "steps": 499959,
+                "file_path": "results/4/AgentBehavior/AgentBehavior-499959.onnx",
+                "reward": -222.4221245488034,
+                "creation_time": 1734010457.075463,
+                "auxillary_file_paths": [
+                    "results/4/AgentBehavior/AgentBehavior-499959.pt"
+                ]
+            },
+            {
+                "steps": 749959,
+                "file_path": "results/4/AgentBehavior/AgentBehavior-749959.onnx",
+                "reward": -201.11541119743796,
+                "creation_time": 1734011855.0907254,
+                "auxillary_file_paths": [
+                    "results/4/AgentBehavior/AgentBehavior-749959.pt"
+                ]
+            },
+            {
+                "steps": 859459,
+                "file_path": "results/4/AgentBehavior/AgentBehavior-859459.onnx",
+                "reward": -199.6062003198614,
+                "creation_time": 1734012498.1935027,
+                "auxillary_file_paths": [
+                    "results/4/AgentBehavior/AgentBehavior-859459.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 859459,
+            "file_path": "results/4/AgentBehavior.onnx",
+            "reward": -199.6062003198614,
+            "creation_time": 1734012498.1935027,
+            "auxillary_file_paths": [
+                "results/4/AgentBehavior/AgentBehavior-859459.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu124"
+    }
+}

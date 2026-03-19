@@ -1,0 +1,500 @@
+/* Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #121212 url('../images/background-pattern.png') repeat; /* Fond avec texture */
+    color: #fff;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(90deg, #1e3c72, #2a5298); /* Style futuriste */
+    padding: 1.5rem;
+    text-align: center;
+    color: #fff;
+    border-bottom: 4px solid #ff4757;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    text-shadow: 2px 2px #ff4757;
+}
+
+header nav a {
+    font-weight: bold;
+    color: #ffdd59;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.2rem;
+}
+
+header nav a:hover {
+    color: #ffa502;
+    text-shadow: 0 0 5px #ffa502;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Boutons */
+.button {
+    display: inline-block;
+    background: #ff4757;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #ff6b81;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    transition: all 0.3s;
+    box-shadow: 0px 4px 8px rgba(255, 71, 87, 0.5);
+}
+
+.button:hover {
+    background: #ffa502;
+    border-color: #ffd32a;
+    box-shadow: 0px 6px 12px rgba(255, 165, 2, 0.7);
+}
+
+/* Section hero */
+#hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+    background: linear-gradient(180deg, #1e272e, #485460);
+    border-radius: 10px;
+    margin-bottom: 2rem;
+}
+
+#hero a {
+    margin-top: 15px;
+}
+
+#hero .hero-content {
+    flex: 1;
+    text-align: center;
+}
+
+#hero .hero-content h2 {
+    font-size: 2rem;
+    color: #ffa502;
+    text-shadow: 2px 2px #1e272e;
+}
+
+#hero .hero-image img {
+    max-width: 100%;
+    border: 4px solid #ff6b81;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+/* Section équipe */
+#about .team-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+#about .member {
+    background: #1e272e;
+    border: 2px solid #ffa502;
+    border-radius: 8px;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+#about .member img {
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    border: 2px solid #ff4757;
+}
+
+#about .member h3 {
+    color: #ffa502;
+    margin-bottom: 0.5rem;
+}
+
+#about {
+  padding: 0.5rem;
+  background-color: #1e272e; /* Couleur de fond */
+  border: 2px solid #ff4757; /* Bordure rouge */
+  border-radius: 8px;
+  margin-top: 1rem; /* Espacement avec la section précédente */
+}
+
+#about h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffa502;
+  margin-top: 2rem;
+}
+
+#about p {
+  margin: 1.5rem;
+}
+
+
+/* Galerie */
+#screenshots {
+    margin: 15px;
+    margin-top: 30px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.gallery img {
+    width: 100%;
+    border: 4px solid #ff4757;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(255, 71, 87, 0.7);
+}
+
+/* Footer */
+footer {
+    background: #1e272e;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    color: #ffa502;
+    border-top: 4px solid #ff4757;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.4rem;
+    }
+
+    #hero {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9rem;
+    }
+
+    header nav a {
+        font-size: 0.8rem;
+    }
+
+    .button {
+        font-size: 0.9rem;
+    }
+}
+
+
+#download {
+  padding: 2rem; /* Espacement interne de la section */
+  max-width: 100vw;
+}
+
+#download h2 {
+  text-align: center; /* Titre centré */
+  margin-bottom: 1rem; /* Espacement en dessous du titre */
+  color: #ffa502; /* Couleur du titre (orange) */
+}
+
+#download-options {
+  display: flex; /* Affiche les options de téléchargement côte à côte */
+  justify-content: space-around; /* Espace les options uniformément */
+  flex-wrap: wrap; /* Permet aux options de se mettre sur plusieurs lignes si nécessaire */
+  gap: 1rem; /* Espacement entre les options */
+}
+
+.download-option {
+  background-color: #1e272e; /* Couleur de fond des options (gris foncé) */
+  border: 2px solid #ffa502; /* Bordure orange */
+  padding: 1rem; /* Espacement interne des options */
+  border-radius: 8px; /* Coins arrondis */
+  text-align: center; /* Texte centré dans les options */
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Ombre portée */
+  flex: 1; /* Permet aux options de prendre un espace égal */
+  min-width: 200px; /* Largeur minimale pour éviter qu'elles ne soient trop étroites */
+}
+
+.download-option h3 {
+  color: #ffa502; /* Couleur du titre de l'option (orange) */
+  margin-bottom: 0.5rem; /* Espacement en dessous du titre */
+}
+
+#download h3 {
+  margin-top: 2rem; /* Espacement au-dessus des titres de configuration */
+  color: #ffa502; /* Couleur du titre (orange) */
+}
+
+#download h4 {
+  margin-top: 1rem; /* Espacement au-dessus des sous-titres de configuration */
+  color: #ffdd59; /* Couleur du sous-titre (jaune) */
+}
+
+#download ul {
+  list-style: disc; /* Puces rondes */
+  padding-left: 2rem; /* Indentation de la liste */
+  margin-bottom: 1rem; /* Espacement en dessous de la liste */
+}
+
+#download li {
+  margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
+}
+
+#download p {
+  margin-bottom: 1rem; /* Espacement en dessous des paragraphes */
+}
+
+#download a { /*  Sélectionne tous les liens dans la section téléchargement */
+  display: inline-block;  /*  Permet de contrôler le padding et la marge */
+  padding: 10px 20px;  /*  Ajoute un padding interne */
+  margin: 10px 0;  /*  Ajoute une marge externe */
+  background-color: #ff4757;  /*  Couleur de fond rouge */
+  color: #fff;  /*  Couleur du texte blanche */
+  text-decoration: none;  /*  Supprime le soulignement */
+  border-radius: 5px;  /*  Arrondit les coins */
+  transition: background-color 0.3s ease; /*  Ajoute une transition douce */
+}
+
+#download a:hover { /*  Change la couleur au survol */
+  background-color: #ffa502;  /*  Couleur de fond orange */
+}
+
+#installation-instructions {
+  display: flex; /* Affiche les instructions d'installation côte à côte */
+  justify-content: space-around; /* Espace les instructions uniformément */
+  flex-wrap: wrap; /* Permet aux instructions de se mettre sur plusieurs lignes si nécessaire */
+  gap: 1rem; /* Espacement entre les instructions */
+}
+
+.installation-instruction {
+  background-color: #1e272e; /* Couleur de fond des instructions (gris foncé) */
+  border: 2px solid #ffa502; /* Bordure orange */
+  padding: 1rem; /* Espacement interne des instructions */
+  border-radius: 8px; /* Coins arrondis */
+  flex: 1; /* Permet aux instructions de prendre un espace égal */
+  min-width: 50px; /* Largeur minimale pour éviter qu'elles ne soient trop étroites */
+  max-width: 100%;
+}
+
+.installation-instruction h4 {
+  color: #ffa502; /* Couleur du titre des instructions (orange) */
+  margin-bottom: 0.5rem; /* Espacement en dessous du titre */
+}
+
+.installation-instruction ol {
+  padding-left: 2rem; /* Indentation de la liste ordonnée */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  #download-options {
+    flex-direction: column; /* Affiche les options de téléchargement les unes en dessous des autres */
+    align-items: center; /* Centre les options horizontalement */
+  }
+
+  #installation-instructions {
+    flex-direction: column; /* Affiche les instructions d'installation les unes en dessous des autres */
+    align-items: center; /* Centre les instructions horizontalement */
+  }
+
+  .installation-instructions {
+    padding: 0px;
+  }
+
+}
+
+
+/* Styles pour la section "Commandes" */
+#controls {
+  padding: 2rem;
+}
+
+#controls h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffa502;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.controls-column {
+  background-color: #1e272e;
+  border: 2px solid #ffa502;
+  padding: 1rem;
+  border-radius: 8px;
+  flex: 1;
+  min-width: 250px;
+}
+
+.controls-column h3 {
+  color: #ffa502;
+  margin-bottom: 0.5rem;
+}
+
+.controls-column ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+.controls-column li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Styles pour la section "Mécaniques de jeu" */
+#gameplay {
+  padding: 2rem;
+  background-color: #1e272e; /* Couleur de fond */
+  border: 2px solid #ff4757; /* Bordure rouge */
+  border-radius: 8px;
+  margin-top: 2rem; /* Espacement avec la section précédente */
+}
+
+#gameplay h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffa502;
+}
+
+#gameplay p {
+  margin-bottom: 1rem;
+}
+
+
+/* Styles pour la section "Défis d'entraînement" */
+#challenges {
+  padding: 2rem;
+  background-color: #1e272e; /* Couleur de fond */
+  border: 2px solid #ff6b81; /* Bordure rose */
+  border-radius: 8px;
+  margin-top: 2rem; /* Espacement avec la section précédente */
+}
+
+#challenges h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffa502;
+}
+
+#challenges ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+#challenges li {
+  margin-bottom: 0.5rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .controls-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/* Styles pour la section "Fonctionnalités principales" */
+#features {
+  padding: 2rem;
+  background-color: #1e272e;
+  border: 2px solid #ffa502;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+#features h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffa502;
+}
+
+#features ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+#features li {
+  margin-bottom: 0.5rem;
+}
+
+/* Styles pour la section "L'histoire" */
+#story {
+  padding: 2rem;
+  background-color: #1e272e;
+  border: 2px solid #ff4757;
+  border-radius: 8px;
+  margin-top: 2rem;
+}
+
+#story h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffa502;
+}
+
+#story p {
+  margin-bottom: 1rem;
+  text-indent: 2rem; /* Ajoute un retrait à chaque paragraphe */
+  line-height: 1.5; /* Augmente l'interligne pour une meilleure lisibilité */
+}
+
+
+#eula {
+  padding: 2rem;
+  background-color: #1e272e; /* Couleur de fond */
+  border: 2px solid #ff4757; /* Bordure rouge */
+  border-radius: 8px;
+  margin-top: 2rem; /* Espacement avec la section précédente */
+}
+
+#eula h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #ffa502;
+}
+
+#eula p {
+  margin-bottom: 1rem;
+  text-indent: 2rem; /* Ajoute un retrait à chaque paragraphe */
+  line-height: 1.5; /* Augmente l'interligne pour une meilleure lisibilité */
+}
+
+#eula ul {
+  list-style: disc;
+  padding-left: 2rem;
+}
+
+#eula li {
+  margin-bottom: 0.5rem;
+}

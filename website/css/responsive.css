@@ -1,0 +1,69 @@
+header ul,
+header li,
+.screens__card,
+.controls__columns,
+.dwn__card,
+.config__cols,
+.ins__card,
+.member,
+.ul {
+    display: block;
+}
+
+/** BODY **/
+
+header li {
+    line-height: 1.5rem;
+}
+
+header h1 {
+    display: flex;
+}
+
+section {
+    margin: 2rem;
+}
+
+/** INDEX > SCREENS **/
+
+.screens__img {
+    max-width: 100%;
+    margin-bottom: 1rem;
+}
+
+/** TUTORIAL > CONTROLS **/
+
+.dwn__btn,
+.dwn__subtitle {
+    margin-top: 1rem;
+}
+
+/** TUTORIAL > CONFIG **/
+
+.ins__img,
+.ins__subtitle {
+    margin-bottom: 1rem;
+}
+
+/** TERMS **/
+
+.terms__subtitle {
+    font-size: 1rem;
+}
+
+.terms__chapter {
+    font-size: 0.8rem;
+}
+
+.terms__paragraph {
+    font-size: .75rem;
+}
+
+.terms__paragraph,
+.terms__chapter,
+.terms__subtitle,
+.terms__box {
+    margin: 0;
+    padding: 0;
+    margin-bottom: .75rem;
+}

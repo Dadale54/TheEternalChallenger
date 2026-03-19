@@ -1,0 +1,65 @@
+{
+    "AgentBehavior": {
+        "checkpoints": [
+            {
+                "steps": 1005469,
+                "file_path": "results/run6_optim/AgentBehavior/AgentBehavior-1005469.onnx",
+                "reward": -0.6607889286143348,
+                "creation_time": 1734028978.7751808,
+                "auxillary_file_paths": [
+                    "results/run6_optim/AgentBehavior/AgentBehavior-1005469.pt"
+                ]
+            },
+            {
+                "steps": 1049999,
+                "file_path": "results/run6_optim/AgentBehavior/AgentBehavior-1049999.onnx",
+                "reward": -1.0089261628490542,
+                "creation_time": 1734029377.8246462,
+                "auxillary_file_paths": [
+                    "results/run6_optim/AgentBehavior/AgentBehavior-1049999.pt"
+                ]
+            },
+            {
+                "steps": 1099999,
+                "file_path": "results/run6_optim/AgentBehavior/AgentBehavior-1099999.onnx",
+                "reward": -1.0067952018420836,
+                "creation_time": 1734029801.4824839,
+                "auxillary_file_paths": [
+                    "results/run6_optim/AgentBehavior/AgentBehavior-1099999.pt"
+                ]
+            },
+            {
+                "steps": 1149999,
+                "file_path": "results/run6_optim/AgentBehavior/AgentBehavior-1149999.onnx",
+                "reward": -1.007403930227702,
+                "creation_time": 1734030224.0765097,
+                "auxillary_file_paths": [
+                    "results/run6_optim/AgentBehavior/AgentBehavior-1149999.pt"
+                ]
+            },
+            {
+                "steps": 1189371,
+                "file_path": "results/run6_optim/AgentBehavior/AgentBehavior-1189371.onnx",
+                "reward": -1.0061882322898215,
+                "creation_time": 1734030559.2570202,
+                "auxillary_file_paths": [
+                    "results/run6_optim/AgentBehavior/AgentBehavior-1189371.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1189371,
+            "file_path": "results/run6_optim/AgentBehavior.onnx",
+            "reward": -1.0061882322898215,
+            "creation_time": 1734030559.2570202,
+            "auxillary_file_paths": [
+                "results/run6_optim/AgentBehavior/AgentBehavior-1189371.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "1.1.0",
+        "torch_version": "2.5.1+cu124"
+    }
+}
